@@ -5,7 +5,7 @@ source_dir="helm-guestbook-"
 yaml_file_name = 
 
 # Loop 5 times
-for i in {1..2}; do
+for i in {1..50}; do
   # Clone the directory    
   sed -i "s,0.1,0.2,g" ${source_dir}$i"/values.yaml"
   git add .
